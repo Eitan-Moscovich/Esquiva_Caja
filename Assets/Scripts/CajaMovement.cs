@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CajaMovement : MonoBehaviour
 {
-    public float velocidad = 3f;
+    public float speed = 2f;
 
     void Start()
     {
@@ -13,6 +13,6 @@ public class CajaMovement : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.down * velocidad * Time.deltaTime);
+        transform.Translate(0,-speed * Time.deltaTime ,0);
     }
 }
