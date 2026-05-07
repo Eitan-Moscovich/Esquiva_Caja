@@ -21,6 +21,7 @@ public class CajaMovement : MonoBehaviour
         Vector3 newPosition = transform.position;
         int randomX = 0;
         randomX = Random.Range(0,3);
+        
         if(randomX == 0){
             newPosition.x = -2;
         }else if(randomX == 1){
