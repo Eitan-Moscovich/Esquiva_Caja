@@ -5,6 +5,7 @@ using UnityEngine;
 public class CajaMovement : MonoBehaviour
 {
     public float speed = 2f;
+    public float speedIncrease = 0.5f;
     float initialYValue;
     void Start()
     {
@@ -32,5 +33,6 @@ public class CajaMovement : MonoBehaviour
 
         newPosition.y = initialYValue;
         transform.position = newPosition;
+        speed += speedIncrease;
     }
 }
