@@ -8,6 +8,8 @@ public class PlayerCollisionDetection : MonoBehaviour
     {
         if(col.gameObject.CompareTag("Caja"))
         {
+            FindObjectOfType<Tiempo>().gameOver = true;
+
             Destroy(gameObject);
         }
     }
